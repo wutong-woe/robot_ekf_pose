@@ -21,7 +21,7 @@
   <!--remap from="odom" to="pr2_base_odometry/odom" /-->
 </node>
 
-<node pkg="rbx1_bringup" type="odom_ekf.py" name="odom_ekf" output="screen">
+<node pkg="robot_ekf_pose" type="odom_ekf.py" name="odom_ekf" output="screen">
   <remap from="input" to="robot_pose_ekf/odom_combined"/>
   <!--remap from="output" to="/odom_ekf"/-->
   <remap from="output" to="/odom"/>
